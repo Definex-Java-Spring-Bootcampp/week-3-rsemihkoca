@@ -2,9 +2,17 @@
 # 3.Hafta Ödevi
 
 1. Aşağıdaki kavramları örneklerle açıklayın. `(10 PUAN)`  
-• Unit test  
-• Integration test
-
+    • Unit test  
+Unit test yazılımın en küçük birimlerini, genellikle fonksiyonları veya metotları, izole edilmiş bir şekilde test etmeyi amaçlar.
+Örnek vermek gerekirse create user endpointini test etmek istediğimizde gerekli isterleri yapay bir şekilde sağlarız fonksiyonu bu verilerle test ederiz.
+Fonksiyonun gerçekten database ulaşmak istediği yerleri mocklarız ve sanki databaseden başarılı çıktı almışız gibi devam ederiz. Eğer test etmek istediğimiz fonksiyon 
+isterlerin önceden belirlenen sonuçlarını veriyorsa unit test başarılıdır. Bu sayede CI sürecinde eklenen yeni özelliklerin var olan davranışı bozmadığından emin oluruz.
+Python'da pytest, unittest kullanırken Java'da Junit, Mockito gibi frameworkler kullanırız.
+   • Integration test
+Entegrasyon testi, yazılım geliştirme sürecinde farklı bileşenlerin veya modüllerin bir araya getirilip çalıştırıldığı bir test türüdür. 
+Bu test, yazılımın farklı bileşenlerinin birlikte uyumlu bir şekilde çalışıp çalışmadığını kontrol etmeyi amaçlar.
+Örnek olarak client'tan yapılan bir isteğin doğru bir şekilde server'a iletildiğini ve server'dan gelen yanıtın doğru bir şekilde işlendiğini integrasyon testleri sayesinde kontrol altına alırız.
+2. 
 2. Aşağıdaki özellikleri **kredinbizde** uygulamasına ekleyin. `(40 PUAN)`  
 • Kredinbizde uygulaması için Garanti bankası için client oluşturun.  
 • Kullanıcı Garanti bankası için kredi başvurusu yapabilmelidir.  
