@@ -12,7 +12,7 @@ Python'da pytest, unittest kullanırken Java'da Junit, Mockito gibi frameworkler
 Entegrasyon testi, yazılım geliştirme sürecinde farklı bileşenlerin veya modüllerin bir araya getirilip çalıştırıldığı bir test türüdür. 
 Bu test, yazılımın farklı bileşenlerinin birlikte uyumlu bir şekilde çalışıp çalışmadığını kontrol etmeyi amaçlar.
 Örnek olarak client'tan yapılan bir isteğin doğru bir şekilde server'a iletildiğini ve server'dan gelen yanıtın doğru bir şekilde işlendiğini integrasyon testleri sayesinde kontrol altına alırız.
-2. 
+
 2. Aşağıdaki özellikleri **kredinbizde** uygulamasına ekleyin. `(40 PUAN)`  
 • Kredinbizde uygulaması için Garanti bankası için client oluşturun.  
 • Kullanıcı Garanti bankası için kredi başvurusu yapabilmelidir.  
