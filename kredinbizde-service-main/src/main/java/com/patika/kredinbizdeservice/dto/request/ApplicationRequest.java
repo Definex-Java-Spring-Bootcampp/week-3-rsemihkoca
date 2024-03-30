@@ -12,5 +12,6 @@ import lombok.Setter;
 public class ApplicationRequest {
 
     private String email;
+    private String bankName;
 
 }
