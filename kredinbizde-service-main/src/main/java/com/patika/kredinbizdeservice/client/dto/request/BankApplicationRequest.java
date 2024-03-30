@@ -7,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class AkbankApplicationRequest {
+public class BankApplicationRequest {
 
     private Long userId;
 
