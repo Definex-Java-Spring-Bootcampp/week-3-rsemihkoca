@@ -15,7 +15,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserController {
 
-    /* @Autowired*/
     private final UserService userService;
 
     @PostMapping
@@ -47,9 +46,4 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
-
-   /* @Autowired
-    public void setUserService(IUserService userService) {
-        this.userService = userService;
-    }*/
 }
