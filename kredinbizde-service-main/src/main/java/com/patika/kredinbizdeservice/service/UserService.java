@@ -8,6 +8,7 @@ import com.patika.kredinbizdeservice.producer.dto.NotificationDTO;
 import com.patika.kredinbizdeservice.producer.enums.NotificationType;
 import com.patika.kredinbizdeservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +20,15 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserService {
 
-    private UserRepository userRepository = new UserRepository();
+    private UserRepository userRepository;
 
     private final NotificationProducer notificationProducer;
+
+    @Autowired
+    public UserService(UserRepository userRepository, NotificationProducer notificationProducer) {
+        this.userRepository = userRepository;
+        this.notificationProducer = notificationProducer;
+    }
 
     public User save(User user) {
         System.out.println("userRepository: " + userRepository.hashCode());
@@ -58,15 +65,7 @@ public class UserService {
             user = foundUser.get();
         }
 
-        //throw new RuntimeException();
-
-        // throw new NullPointerException();
-
-         throw new IllegalArgumentException("exception fırlatıldı");
-
-        // throw new ArithmeticException();
-
-       // return user;
+        return user;
 
     }
 
