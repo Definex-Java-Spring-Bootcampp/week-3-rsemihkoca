@@ -42,6 +42,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>kredinbizde-discovery-main</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
