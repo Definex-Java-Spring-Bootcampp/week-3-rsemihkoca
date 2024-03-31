@@ -28,4 +28,9 @@ public class ApplicationController {
         return ResponseEntity.ok().body(applicationService.getAll(email));
     }
 
+    @GetMapping
+    public ResponseEntity<List<Application>> testKafka() {
+        throw new RuntimeException("test exception");
+    }
+
 }
