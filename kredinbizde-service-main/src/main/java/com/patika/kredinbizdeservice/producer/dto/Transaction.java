@@ -8,7 +8,6 @@ import org.springframework.http.HttpStatus;
 @Builder
 @Data
 @EqualsAndHashCode
-@ToString
 public class Transaction {
     private String errorMessage;
     private String sender;
