@@ -39,6 +39,7 @@ public class GlobalExceptionHandler {
     private Transaction prepareTransaction(Exception exception) {
         return Transaction.builder()
                 .errorMessage(exception.getMessage())
+                .sender("kredinbizde-service-main")
                 .httpStatus(HttpStatus.BAD_REQUEST)
                 .statusCode(String.valueOf(HttpStatus.BAD_REQUEST.value()))
                 .timestamp(System.currentTimeMillis())
