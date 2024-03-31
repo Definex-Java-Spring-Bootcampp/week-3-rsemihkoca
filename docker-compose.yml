@@ -64,71 +64,43 @@ services:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: 123456
 
-
-#  mongo:
-#    image: mongo:6
-#    restart: always
-#    container_name: mongo
-#    environment:
-#      MONGO_INITDB_ROOT_USERNAME: root
-#      MONGO_INITDB_ROOT_PASSWORD: example
-#    #      MONGO_INITDB_DATABASE: init
-#    volumes:
-#      - ./db_data/:/data/db/
-#      - /etc/timezone:/etc/timezone:ro
-#    networks:
-#      - spring-boot
-#  mongo-express:
-#    image: mongo-express
-#    restart: always
-#    container_name: mongo_ui
-#    ports:
-#      - 8081:8081
-#    environment:
-#      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-#      ME_CONFIG_MONGODB_ADMINPASSWORD: example
-#      ME_CONFIG_MONGODB_SERVER: mongodb
-#    networks:
-#      - spring-boot
-
   mongodb:
     image: mongo:7.0
     container_name: mongodb
     environment:
-      MONGODB_DATABASE: error-logs
-#      MONGO_INITDB_ROOT_USERNAME: admin
-#      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: example
     ports:
       - "27017:27017"
     volumes:
-#      - ./initialize-mongo.js:/docker-entrypoint-initdb.d/initialize-mongo.js:ro
       - mongodb_data:/data/db
+      - ./initialize-mongo.js:/docker-entrypoint-initdb.d/01_initialize-mongo.js:ro
     networks:
-      - spring-boot
+      - mongo-compose-network
 
-  mongo-express:
-    image: mongo-express:0.54.0
-    container_name: mongo-express
-    restart: always
-    environment:
-      ME_CONFIG_MONGODB_SERVER: mongodb
-      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
-      ME_CONFIG_MONGODB_ADMINPASSWORD: example
-#      ME_CONFIG_BASICAUTH_PASSWORD: example
-      ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
-    ports:
-      - "8081:8081"
-    expose:
-      - "8081"
-    volumes:
-      - ./express-app:/app
-    depends_on:
-      - mongodb
-    networks:
-      - spring-boot
+#  mongo-express:
+#    container_name: mongo-express
+#    image: mongo-express:0.54.0
+#    depends_on:
+#      - mongodb
+#    networks:
+#      - mongo-compose-network
+#    environment:
+#      - ME_CONFIG_MONGODB_SERVER=mongodb
+#      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+#      - ME_CONFIG_MONGODB_ADMINPASSWORD=example
+#      - ME_CONFIG_BASICAUTH_USERNAME=log-consumer
+#      - ME_CONFIG_BASICAUTH_PASSWORD=example
+#    ports:
+#      - '8081:8081'
+#    volumes:
+#      - ./data:/data/db
+
 
 volumes:
   mongodb_data:
 networks:
+  mongo-compose-network:
+    driver: bridge
   spring-boot:
     driver: bridge
