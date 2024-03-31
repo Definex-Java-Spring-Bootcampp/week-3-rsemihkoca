@@ -9,19 +9,13 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories
-public class LogconsumerServiceMainApplication implements CommandLineRunner{
+public class LogconsumerServiceMainApplication{
 
-    @Autowired
-    TransactionRepository groceryItemRepo;
 
     public static void main(String[] args) {
         SpringApplication.run(LogconsumerServiceMainApplication.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-
-    }
 }
 
 
