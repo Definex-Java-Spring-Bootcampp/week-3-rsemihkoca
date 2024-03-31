@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/kredinbizde-discovery-main/pom.xml" />
         <option value="$PROJECT_DIR$/kredinbizde-service-main/pom.xml" />
         <option value="$PROJECT_DIR$/notification-service-main/pom.xml" />
+        <option value="$PROJECT_DIR$/logconsumer-service-main/pom.xml" />
       </list>
     </option>
   </component>
