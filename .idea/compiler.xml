@@ -10,10 +10,15 @@
         <module name="kredinbizde-discovery" />
         <module name="akbank-service" />
         <module name="kredinbizde-service" />
+        <module name="logconsumer-service-main" />
         <module name="garanti-service" />
         <module name="notification-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="logconsumer-service-main.main" target="21" />
+      <module name="logconsumer-service-main.test" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,6 +26,7 @@
       <module name="garanti-service" options="-parameters" />
       <module name="kredinbizde-discovery" options="-parameters" />
       <module name="kredinbizde-service" options="-parameters" />
+      <module name="logconsumer-service-main" options="-parameters" />
       <module name="notification-service" options="-parameters" />
     </option>
   </component>
