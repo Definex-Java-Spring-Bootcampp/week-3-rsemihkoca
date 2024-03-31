@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/kredinbizde-service-main/kredinbizde-service.iml" filepath="$PROJECT_DIR$/kredinbizde-service-main/kredinbizde-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notification-service-main/notification-service.iml" filepath="$PROJECT_DIR$/notification-service-main/notification-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/week-3-rsemihkoca.iml" filepath="$PROJECT_DIR$/.idea/week-3-rsemihkoca.iml" />
     </modules>
   </component>
