@@ -1,5 +1,6 @@
 package com.patika.kredinbizdeservice.producer;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -16,18 +17,31 @@ import com.patika.kredinbizdeservice.producer.dto.Transaction;
 @Scope("singleton")
 public class TransactionProducer {
 
+    private final ObjectMapper objectMapper;
+
     @Value(value = "${spring.kafka.producer.topic}")
     private String topicName;
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
-    public TransactionProducer(KafkaTemplate<String, String> kafkaTemplate) {
+    @Autowired
+    public TransactionProducer(ObjectMapper objectMapper, KafkaTemplate<String, String> kafkaTemplate) {
+        this.objectMapper = objectMapper;
         this.kafkaTemplate = kafkaTemplate;
     }
 
     @SneakyThrows
-    public void sendTransaction(final Transaction message) {
-        kafkaTemplate.send(topicName, new ObjectMapper().writeValueAsString(message));
+    public void sendTransaction(Transaction message) {
+        kafkaTemplate.send(topicName, prepareTransaction(message));
+        kafkaTemplate.flush();
         log.info("Transaction published to Kafka");
+    }
+
+    private String prepareTransaction(Transaction transaction) {
+        try {
+            return objectMapper.writeValueAsString(transaction);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
