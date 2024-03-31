@@ -4,7 +4,7 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
     auto-offset-reset: latest
-    group-id: consumer-group
+    group-id: consumer-1
     topic:
       name: kafka-log-topic
 
@@ -13,7 +13,7 @@ spring:
         host: localhost
         port: 27017
         database: error-logs
-        username: admin
+        username: log-consumer
         password: example
 
 server:
