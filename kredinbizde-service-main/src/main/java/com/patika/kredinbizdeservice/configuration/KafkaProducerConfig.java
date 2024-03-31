@@ -1,5 +1,6 @@
 package com.patika.kredinbizdeservice.configuration;
 
+import com.patika.kredinbizdeservice.producer.dto.Transaction;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
