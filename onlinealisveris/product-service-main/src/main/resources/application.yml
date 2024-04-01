@@ -9,6 +9,19 @@ spring:
     name: product-service-main
   main:
     allow-bean-definition-overriding: 'true'
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 123456
+    queue:
+      increase: increaseQueue
+      decrease: decreaseQueue
+    exchange: exchange
+    routingkey:
+      increase: increase
+      decrease: decrease
 eureka:
   client:
     serviceUrl:
