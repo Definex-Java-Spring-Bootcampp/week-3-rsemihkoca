@@ -1,8 +1,8 @@
-package com.rsemihkoca.orderservicemain.producer;
+package com.rsemihkoca.productservicemain.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.rsemihkoca.orderservicemain.producer.dto.Transaction;
+import com.rsemihkoca.productservicemain.producer.dto.Transaction;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
