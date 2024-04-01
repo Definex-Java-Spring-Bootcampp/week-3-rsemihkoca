@@ -1,4 +1,4 @@
-package com.rsemihkoca.productservicemain.model.type;
+package com.rsemihkoca.orderservicemain.model.type;
 
 public class NonNegativeIntegerType {
     private int value;
