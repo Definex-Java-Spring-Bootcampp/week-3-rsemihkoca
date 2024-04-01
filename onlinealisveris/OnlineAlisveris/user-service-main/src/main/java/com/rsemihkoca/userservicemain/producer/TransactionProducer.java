@@ -2,7 +2,7 @@ package com.rsemihkoca.userservicemain.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.patika.kredinbizdeservice.producer.dto.Transaction;
+import com.rsemihkoca.userservicemain.producer.dto.Transaction;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
