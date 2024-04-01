@@ -1,8 +1,8 @@
 package com.rsemihkoca.orderservicemain.exceptions;
 
-import com.rsemihkoca.userservicemain.exceptions.dto.ExceptionResponse;
-import com.rsemihkoca.userservicemain.producer.TransactionProducer;
-import com.rsemihkoca.userservicemain.producer.dto.Transaction;
+import com.rsemihkoca.orderservicemain.exceptions.dto.ExceptionResponse;
+import com.rsemihkoca.orderservicemain.producer.TransactionProducer;
+import com.rsemihkoca.orderservicemain.producer.dto.Transaction;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +39,7 @@ public class GlobalExceptionHandler {
     private Transaction prepareTransaction(Exception exception) {
         return Transaction.builder()
                 .errorMessage(exception.getMessage())
-                .sender("user-service-main")
+                .sender("order-service-main")
                 .httpStatus(HttpStatus.BAD_REQUEST)
                 .statusCode(String.valueOf(HttpStatus.BAD_REQUEST.value()))
                 .timestamp(System.currentTimeMillis())
