@@ -1,5 +1,6 @@
 package com.rsemihkoca.orderservicemain.exceptions.dto;
 
+import lombok.*;
 import org.springframework.http.HttpStatus;
 
 @Getter
