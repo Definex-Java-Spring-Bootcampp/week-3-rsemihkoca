@@ -2,18 +2,29 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="onlinealisveris-discovery-service" />
+        <module name="product-service-main" />
+        <module name="logconsumer-service-main" />
         <module name="user-service-main" />
+        <module name="onlinealisveris-discovery-service" />
+        <module name="order-service-main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ordermanagement-service" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="logconsumer-service-main" options="-parameters" />
       <module name="onlinealisveris-discovery-service" options="-parameters" />
+      <module name="order-service-main" options="-parameters" />
+      <module name="ordermanagement-service" options="" />
+      <module name="product-service-main" options="-parameters" />
       <module name="user-service-main" options="-parameters" />
     </option>
   </component>
