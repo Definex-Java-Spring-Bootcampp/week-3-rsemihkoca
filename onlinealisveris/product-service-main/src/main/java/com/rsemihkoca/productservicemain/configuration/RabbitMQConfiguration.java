@@ -1,4 +1,58 @@
-package com.patika.kredinbizdeservice.configuration;
+package com.rsemihkoca.productservicemain.configuration;
+
+
+//import lombok.Data;
+//import org.springframework.amqp.core.*;
+//import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+//import org.springframework.amqp.rabbit.core.RabbitTemplate;
+//import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
+//import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
+//import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
+//import org.springframework.amqp.support.converter.MessageConverter;
+//import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Configuration;
+//
+//@Configuration
+//@Data
+//public class RabbitMQConfiguration {
+//
+//    @Value("${rabbitmq.queue}")
+//    private String queueName;
+//
+//    @Value("${rabbitmq.exchange}")
+//    private String exchange;
+//
+//    @Value("${rabbitmq.routingkey}")
+//    private String routingkey;
+//
+//    @Bean
+//    public Queue queue() {
+//        return new Queue(queueName, false);
+//    }
+//
+//    @Bean
+//    public DirectExchange exchange() {
+//        return new DirectExchange(exchange);
+//    }
+//
+//    @Bean
+//    public Binding binding(Queue queue, DirectExchange exchange) {
+//        return BindingBuilder.bind(queue).to(exchange).with(routingkey);
+//    }
+//
+//    @Bean
+//    public MessageConverter jsonMessageConverter() {
+//        return new Jackson2JsonMessageConverter();
+//    }
+//
+//    @Bean
+//    public AmqpTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
+//        final RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+//        rabbitTemplate.setMessageConverter(jsonMessageConverter());
+//        return rabbitTemplate;
+//    }
+//}
 
 
 import lombok.Data;
@@ -11,32 +65,49 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 @Data
 public class RabbitMQConfiguration {
 
-    @Value("${rabbitmq.queue}")
-    private String queueName;
+    @Value("${spring.rabbitmq.queue.increase}")
+    private String increaseQueueName;
 
-    @Value("${rabbitmq.exchange}")
-    private String exchange;
+    @Value("${spring.rabbitmq.queue.decrease}")
+    private String decreaseQueueName;
 
-    @Value("${rabbitmq.routingkey}")
-    private String routingkey;
+    @Value("${spring.rabbitmq.exchange}")
+    private String exchangeName;
+
+    @Value("${spring.rabbitmq.routingkey.increase}")
+    private String increaseRoutingKey;
+
+    @Value("${spring.rabbitmq.routingkey.decrease}")
+    private String decreaseRoutingKey;
 
     @Bean
-    public Queue queue() {
-        return new Queue(queueName, false);
+    public Queue increaseQueue() {
+        return new Queue(increaseQueueName, false);
+    }
+
+    @Bean
+    public Queue decreaseQueue() {
+        return new Queue(decreaseQueueName, false);
     }
 
     @Bean
     public DirectExchange exchange() {
-        return new DirectExchange(exchange);
+        return new DirectExchange(exchangeName);
     }
 
     @Bean
-    public Binding binding(Queue queue, DirectExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with(routingkey);
+    public Binding increaseBinding(Queue increaseQueue, DirectExchange exchange) {
+        return BindingBuilder.bind(increaseQueue).to(exchange).with(increaseRoutingKey);
+    }
+
+    @Bean
+    public Binding decreaseBinding(Queue decreaseQueue, DirectExchange exchange) {
+        return BindingBuilder.bind(decreaseQueue).to(exchange).with(decreaseRoutingKey);
     }
 
     @Bean
@@ -45,8 +116,8 @@ public class RabbitMQConfiguration {
     }
 
     @Bean
-    public AmqpTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
-        final RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
+        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
         rabbitTemplate.setMessageConverter(jsonMessageConverter());
         return rabbitTemplate;
     }
