@@ -1,11 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7fb7163-763d-4bee-a0ea-45e6c1272895" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/blobs/version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/xd.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/configuration/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/configuration/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/exceptions/dto/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/producer/TransactionProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/producer/dto/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initialize-mongo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/main/java/com/rsemihkoca/logconsumerservicemain/LogconsumerServiceMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/main/java/com/rsemihkoca/logconsumerservicemain/configuration/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/main/java/com/rsemihkoca/logconsumerservicemain/document/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/main/java/com/rsemihkoca/logconsumerservicemain/listener/KafkaConsumerListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/main/java/com/rsemihkoca/logconsumerservicemain/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logconsumer-service-main/src/test/java/com/rsemihkoca/logconsumerservicemain/LogconsumerServiceMainApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/src/main/java/com/rsemihkoca/onlinealisverisdiscoveryservice/OnlinealisverisDiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/src/test/java/com/rsemihkoca/onlinealisverisdiscoveryservice/OnlinealisverisDiscoveryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/configuration/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/configuration/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/exceptions/dto/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/model/Invoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/model/enums/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/producer/TransactionProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/producer/dto/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/OrdermanagementServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/exceptions/dto/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/producer/TransactionProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/producer/dto/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/producer/enums/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ordermanagement-service/src/test/java/com/rsemihkoca/ordermanagementservice/OrdermanagementServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kredinbizde-service-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kredinbizde-service-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/onlinealisveris-discovery-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/UserServiceMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/UserServiceMainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week-1-rsemihkoca/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLabMergeRequestsSettings"><![CDATA[{}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2eUceqFSNTAjzJjEYfzDNw9Apid" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{}</component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.LogconsumerServiceMainApplication.executor": "Run",
+    "Spring Boot.OnlinealisverisDiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceMainApplication.executor": "Debug",
+    "Spring Boot.UserServiceMainApplication.executor": "Debug",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/rsemihkoca/Projects/week-3-rsemihkoca/onlinealisveris/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain/model" />
+      <recent name="$PROJECT_DIR$/order-service-main/src/main/java/com/rsemihkoca/orderservicemain" />
+      <recent name="$PROJECT_DIR$/ordermanagement-service/src/main/java/com/rsemihkoca/ordermanagementservice" />
+      <recent name="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain" />
+      <recent name="$PROJECT_DIR$/OnlineAlisveris/user-service-main/src/main/java/com/rsemihkoca/userservicemain/producer" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rsemihkoca.orderservicemain.controller" />
+      <recent name="com.rsemihkoca.orderservicemain.repository" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductServiceMainApplication">
+    <configuration name="LogconsumerServiceMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="logconsumer-service-main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rsemihkoca.logconsumerservicemain.LogconsumerServiceMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlinealisverisDiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="onlinealisveris-discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rsemihkoca.onlinealisverisdiscoveryservice.OnlinealisverisDiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-service-main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rsemihkoca.orderservicemain.OrderServiceMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrdermanagementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ordermanagement-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rsemihkoca.ordermanagementservice.OrdermanagementServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="product-service-main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rsemihkoca.productservicemain.ProductServiceMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="user-service-main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rsemihkoca.userservicemain.UserServiceMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.127" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7fb7163-763d-4bee-a0ea-45e6c1272895" name="Changes" comment="" />
+      <created>1711962696052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711962696052</updated>
+      <workItem from="1711962697078" duration="10454000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>
