@@ -1,4 +1,4 @@
-package com.patika.kredinbizdeservice.exceptions.dto;
+package com.rsemihkoca.userservicemain.exceptions.dto;
 
 import lombok.*;
 import org.springframework.http.HttpStatus;
