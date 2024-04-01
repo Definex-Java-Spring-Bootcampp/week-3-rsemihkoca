@@ -6,7 +6,16 @@
       <list>
         <option value="$PROJECT_DIR$/OnlineAlisveris/user-service-main/pom.xml" />
         <option value="$PROJECT_DIR$/onlinealisveris-discovery-service/pom.xml" />
+        <option value="$PROJECT_DIR$/logconsumer-service-main/pom.xml" />
+        <option value="$PROJECT_DIR$/ordermanagement-service/pom.xml" />
+        <option value="$PROJECT_DIR$/order-service-main/pom.xml" />
+        <option value="$PROJECT_DIR$/product-service-main/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ordermanagement-service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK" />
