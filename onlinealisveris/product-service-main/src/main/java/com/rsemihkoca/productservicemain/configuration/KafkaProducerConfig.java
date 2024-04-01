@@ -1,4 +1,4 @@
-package com.rsemihkoca.orderservicemain.configuration;
+package com.rsemihkoca.productservicemain.configuration;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
