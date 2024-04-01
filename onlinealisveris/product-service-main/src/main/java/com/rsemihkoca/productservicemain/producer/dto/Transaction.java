@@ -1,4 +1,4 @@
-package com.rsemihkoca.orderservicemain.producer.dto;
+package com.rsemihkoca.productservicemain.producer.dto;
 
 import lombok.*;
 import org.springframework.http.HttpStatus;
