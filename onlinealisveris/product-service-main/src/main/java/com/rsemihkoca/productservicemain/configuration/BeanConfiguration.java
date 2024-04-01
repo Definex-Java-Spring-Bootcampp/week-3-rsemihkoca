@@ -1,4 +1,4 @@
-package com.rsemihkoca.orderservicemain.configuration;
+package com.rsemihkoca.productservicemain.configuration;
 
 import org.springframework.context.annotation.Configuration;
 
