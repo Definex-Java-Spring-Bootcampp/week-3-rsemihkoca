@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -22,6 +23,14 @@ public class ProductService {
 
     public Product createProduct(Product product) {
         return productRepository.save(product);
+    }
+
+    public Product getProductById(String product) {
+        return productRepository.getById(product);
+    }
+
+    public Product deleteProduct(Product product) {
+        return productRepository.delete(product);
     }
 
     public List<Product> getAll() {
